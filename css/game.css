@@ -1,0 +1,110 @@
+*{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background:url(../img/beijing.jpg) center center no-repeat  ;
+    background-size:cover;
+    overflow:hidden;
+}
+.cloud{
+    width:1200px;
+    height:100px;
+    background:url(../img/yun.png) no-repeat center;
+    background-size:contain;
+    margin:0 auto;
+    position:absolute;
+    /*top:0;*/
+    /*!*left:50%;*!*/
+    /*transform:translateX(-50%);*/
+    /*animation-name:yun;*/
+    /*animation-duration:1s;*/
+    /*animation-timing-function:ease-in-out;*/
+    /*animation-iteration-count:infinite;*/
+    /*animation-play-state: running;*/
+    /*animate-direction:alternate;*/
+    z-index:1000;
+    animation:yun 1s ease-in-out infinite alternate;
+
+
+}
+@keyframes yun{
+    from{
+        /*left:200px;*/
+        transform:translateX(100px);
+    }
+    to{
+        transform:translateX(200px);
+        /*left:500px*/
+    }
+}
+.box{
+    width:200px;
+    height:auto;
+    position:absolute;
+    top:100px;
+    left:30px;
+}
+.son{
+    width:200px;
+    height:30px;
+}
+.son .text{
+    width:60px;
+    height:30px;
+    font-size:16px;
+    color:red;
+    line-height:30px;
+    text-align:center;
+    float:left;
+}
+.big{
+    /*display:inline-block;*/
+    width:100px;
+    height:10px;
+    background:green;
+    margin-left:60px;
+    margin-top:-10px;
+}
+.small{
+    /*display:inline-block;*/
+    /*width:10px;*/
+    height:10px;
+    background:red;
+}
+progress{
+    /*list-style:none;*/
+    width:100px;
+    height:10px;
+    float:left;
+    margin-top:10px;
+}
+.health,.score{
+    width:60px;
+    height:60px;
+    font-size:16px;
+    color:#000;
+    line-height:40px;
+    text-align:center;
+}
+.health{
+    background-image:url(../img/Jfen.png);
+    background-position:60px,0;
+    background--repeat:no-repeat;
+    background-size:cover;
+}
+.score{
+    background-image:url(../img/Jfen.png);
+    background-position:0,0;
+    background--repeat:no-repeat;
+    background-size:cover;
+}
+.sm{
+    color:red;
+}
+.sc{
+    color:red;
+}
